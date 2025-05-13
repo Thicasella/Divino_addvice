@@ -1,0 +1,22 @@
+Color blue principal
+#092b5a 
+rgb(9, 43, 90)
+
+Color black #000000
+
+Color White #ffffff
+
+Color yellow #f1ae2b
+
+color yellow hover #f2bc51
+
+color vinho #680148
+
+color azul claro #7db4b5
+
+Label form color
+#7db4b5
+
+
+
+
