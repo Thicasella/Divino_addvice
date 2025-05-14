@@ -135,8 +135,6 @@ function checkVisibility() {
   const button = document.getElementById('whatsapp-float');
   const sectionsToHideIn = [
     document.getElementById('header'),
-    document.getElementById('benefits'),
-    document.getElementById('services'),
     document.getElementById('div-contact'),
     document.getElementById('services-contact'),
     document.getElementById('contact'),
@@ -165,8 +163,10 @@ window.addEventListener('resize', checkVisibility);
 window.addEventListener('load', checkVisibility);
 
 
-// EmailJS Script -->
-emailjs.init("C5LZ0dza_-gJpnc7X");
+// EmailJS Script
+emailjs.init("f48Jibga41l8YPbxM");
+
+// Formulário 1 "Solicite seu orçamento"
 
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
@@ -174,7 +174,28 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   const btn = document.getElementById('submitButton');
   btn.innerText = 'Enviando...';
 
-  emailjs.sendForm("service_b3g1u3w", "template_oedeibw", this)
+  emailjs.sendForm("service_22fhgmz", "template_owc3pjq", this)  // ID do Template 1
+    .then(() => {
+      alert("Mensagem enviada com sucesso!");
+      btn.innerText = 'Enviar';
+      this.reset();
+    })
+    .catch((error) => {
+      alert("Erro ao enviar: " + JSON.stringify(error));
+      btn.innerText = 'Tentar novamente';
+    });
+});
+
+// Formulário 2 "Contato"
+emailjs.init("f48Jibga41l8YPbxM");
+
+document.getElementById('contactForm2').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const btn = document.getElementById('submitButton');
+  btn.innerText = 'Enviando...';
+
+  emailjs.sendForm("service_22fhgmz", "template_iwcj5fk", this) // ID do Template 1
     .then(() => {
       alert("Mensagem enviada com sucesso!");
       btn.innerText = 'Enviar';

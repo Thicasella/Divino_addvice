@@ -297,14 +297,14 @@
                             <div class="form-group">
                                 <!-- Message input-->
                                 <label for="message" class="form-label">Menssagem:</label>
-                                <textarea class="form-control" id="message" name="message" data-sb-validations="required"></textarea>
+                                <textarea rows="7" cols="50" class="form-control" id="message" name="message" data-sb-validations="required"></textarea>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">Messagem é obrigatória</div>
                             </div>
-                            <div class="form-group">
-                                <!-- File input-->
+                        <!--<div class="form-group">
+                                File input
                                <label for="formFile" class="form-label">Arquivo:</label>
                                <input class="form-control" type="file" id="formFile" name="formFile">
-                           </div>
+                            </div>-->
                         </div><br>
                     <!-- Submit Button-->
                     <div class="text-center"><button class="btn btn-primary" id="submitButton" type="submit">Enviar</button></div>
@@ -319,7 +319,7 @@
                 </div>
                 <div class="container-portifolio">
                     <div class="col-lg-6">
-                        <h4 class="section-heading h4-blog">Projetos Arquitetônico</h4>
+                        <h4 class="section-heading h4-blog">Projetos Arquitetônico & INTERIORES</h4>
                         <div class="container-div">
                             <!-- Carrossel 1 -->
                             <div class="carrossel-container" onmouseleave="resetCarrossel(this)">
@@ -410,11 +410,11 @@
                     </div>
                 </div>
                 <div class="div-portifolio" id="">
-                    <a class="btn btn-xl text-uppercase" href="#div-contact">Fale com um especialista</a>
+                    <a class="btn btn-xl text-uppercase" href="#contact">Fale com um especialista</a>
                 </div>
                 <div class="container-portifolio">
-                    <div class="col-lg-6">
-                        <h4 class="section-heading h4-blog">Vistorias técnicas</h4>
+                    <div class="col-lg-12">
+                        <h4 class="section-heading h4-blog">Vistorias e inspeções técnicas</h4>
                         <div class="container-div">
                             <!-- Carrossel 1 -->
                             <div class="carrossel-container" onmouseleave="resetCarrossel(this)">
@@ -456,12 +456,7 @@
                                     <img class="mb-3 img-portifolio" src="assets/img/portfolio/Vistorias técnicas/Bloco 4/5.jpg" alt="Imagem 5">
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h4 class="section-heading h4-blog">Obras e reformas</h4>
-                        <div class="container-div">
-                            <!-- Carrossel 1 -->
+                            <!-- Carrossel 5 -->
                             <div class="carrossel-container" onmouseleave="resetCarrossel(this)">
                                 <div class="carrossel" onmousemove="handleCarrosselHover(this, event)">
                                     <img class="mb-3 img-portifolio" src="assets/img/portfolio/Obras e reformas/Bloco 1/1.jpg" alt="Imagem 1">
@@ -471,7 +466,7 @@
                                     <img class="mb-3 img-portifolio" src="assets/img/portfolio/Obras e reformas/" alt="Imagem 5">
                                 </div>
                             </div>
-                            <!-- Carrossel 2 -->
+                            <!-- Carrossel 6 -->
                             <div class="carrossel-container" onmouseleave="resetCarrossel(this)">
                                 <div class="carrossel" onmousemove="handleCarrosselHover(this, event)">
                                     <img class="mb-3 img-portifolio" src="assets/img/portfolio/Obras e reformas/Bloco 2/1.jpg" alt="Imagem 1">
@@ -481,7 +476,7 @@
                                     <img class="mb-3 img-portifolio" src="assets/img/portfolio/Obras e reformas" alt="Imagem 5">
                                 </div>
                             </div>
-                            <!-- Carrossel 3 -->
+                            <!-- Carrossel 7 -->
                             <div class="carrossel-container" onmouseleave="resetCarrossel(this)">
                                 <div class="carrossel" onmousemove="handleCarrosselHover(this, event)">
                                     <img class="mb-3 img-portifolio" src="assets/img/portfolio/Obras e reformas/Bloco 3/1.jpg" alt="Imagem 1">
@@ -491,7 +486,7 @@
                                     <img class="mb-3 img-portifolio" src="assets/img/portfolio/Obras e reformas/Bloco 3/5.jpg" alt="Imagem 5">
                                 </div>
                             </div>
-                            <!-- Carrossel 4 -->
+                            <!-- Carrossel 8 -->
                             <div class="carrossel-container" onmouseleave="resetCarrossel(this)">
                                 <div class="carrossel" onmousemove="handleCarrosselHover(this, event)">
                                     <img class="mb-3 img-portifolio" src="assets/img/portfolio/Obras e reformas/Bloco 4/68.svg" alt="Imagem 1">
@@ -619,13 +614,13 @@
                     </h3>
                 </div>
                 <!-- * *Contact Form * *-->
-                <form id="contactForm" class="form-contact mx-auto">
+                <form id="contactForm2" class="form-contact mx-auto">
                     <div class="row align-items-stretch mb-1">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <!-- Name input-->
                                 <label for="formFile" class="form-label">Nome:</label>
-                                <input class="form-control" id="name2" name="name" type="text" data-sb-validations="required" />
+                                <input class="form-control" id="name2" name="name2" type="text" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Nome é obrigatório</div>
                             </div>
                         </div>
@@ -633,52 +628,31 @@
                             <div class="form-group">
                                 <!-- Phone number input-->
                                 <label for="formFile" class="form-label">Contato (WhatsApp):</label>
-                                <input class="form-control" id="phone2" name="phone" type="tel" data-sb-validations="required" />
+                                <input class="form-control" id="phone2" name="phone2" type="tel" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">Telefone é obrigaório</div>
                             </div>
                         </div>
                             <div class="form-group">
-                                <!-- Subject input-->
-                                <label for="formFile" class="form-label">Assunto:</label>
-                                <input class="form-control" id="subject2" name="subject" type="text" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Titulo é obrigatório</div>
-                            </div>
-                            <div class="form-group">
                                 <!-- Email address input-->
                                 <label for="formFile" class="form-label">E-mail:</label>
-                                <input class="form-control" id="email2" name="email" type="email" data-sb-validations="required,email" />
+                                <input class="form-control" id="email2" name="email2" type="email" data-sb-validations="required,email" />
                                 <div class="invalid-feedback" data-sb-feedback="email:required">Email é obrigatório</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email não é valido</div>
                             </div>
                             <div class="form-group">
                                 <!-- Message input-->
                                 <label for="formFile" class="form-label">Menssagem:</label>
-                                <textarea class="form-control" id="message2" name="message" data-sb-validations="required"></textarea>
+                                <textarea rows="7" cols="50" class="form-control" id="message2" name="message2" data-sb-validations="required"></textarea><br>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">Messagem é obrigatória</div>
                             </div>
-                            <div class="form-group">
-                                 <!-- File input-->
+                        <!--<div class="form-group">
+                                 File input
                                 <label for="formFile" class="form-label">Arquivo:</label>
                                 <input class="form-control" type="file" id="formFile">
-                            </div>
+                            </div> -->
                         </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
                     <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                 
                     <!-- Submit Button-->
                     <div class="text-center"><button class="btn btn-primary" id="submitButton" type="submit">Enviar</button></div>
                 </form>
@@ -693,7 +667,7 @@
                         <p>Seg. a Sex. das 9h às 18h</p>
                     </div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <p>contato@divinoaddvice.com</p>
+                        <p>contato@divinoaddvice.com.br</p>
                         <p>
                             <a class="btn btn-light btn-social mx-2" href="https://wa.me/5511991327254" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
                             <a class="btn btn-light btn-social mx-2" href="https://www.linkedin.com/company/divino-addvice/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
