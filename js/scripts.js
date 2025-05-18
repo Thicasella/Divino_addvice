@@ -8,28 +8,19 @@
 // 
 
 window.addEventListener('DOMContentLoaded', event => {
-
     // Navbar shrink function
-    var navbarShrink = function () {
+    const navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
-
+        if (!navbarCollapsible) return;
+        
+        navbarCollapsible.classList.toggle('navbar-shrink', window.scrollY !== 0);
     };
 
-    // Shrink the navbar 
+    // Initialize
     navbarShrink();
-
-    // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
 
-    //  Activate Bootstrap scrollspy on the main nav element
+    // Bootstrap ScrollSpy
     const mainNav = document.body.querySelector('#mainNav');
     if (mainNav) {
         new bootstrap.ScrollSpy(document.body, {
@@ -38,19 +29,33 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
+    // Mobile menu close functionality - CORREÇÃO PRINCIPAL
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    // Fecha o menu ao clicar nos links
+    document.querySelectorAll('#navbarResponsive .nav-link').forEach(navLink => {
+        navLink.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
+                const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                    toggle: false
+                });
+                bsCollapse.hide();
             }
         });
     });
 
+    // Fecha o menu ao clicar fora
+    document.addEventListener('click', (event) => {
+        if (!navbarCollapse.contains(event.target) && 
+            !navbarToggler.contains(event.target) &&
+            navbarCollapse.classList.contains('show')) {
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false
+            });
+            bsCollapse.hide();
+        }
+    });
 });
 
 // Codigo de efeito dos beneficios da esquerda
