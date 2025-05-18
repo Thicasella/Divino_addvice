@@ -117,7 +117,7 @@ function handleCarrosselHover(carrossel, event) {
   
   // Calcula qual imagem mostrar (1-4, pois a primeira já está visível)
   const imageIndex = Math.min(
-      Math.floor((x / width) * 3) + 1,
+      Math.floor((x / width) * 4) + 1,
       4
   );
   
