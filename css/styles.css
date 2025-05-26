@@ -11511,7 +11511,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: right;
   color: #fff;
-  background-image: url("../assets/img/home/imagem-inicial.svg");
+  background-image: url("../assets/img/home/imagem-inicial.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -11614,7 +11614,7 @@ header.masthead .masthead-heading {
 .home-differences {
   background-image: 
       /*linear-gradient(to right, #7db4b5, rgba(0, 0, 0, 0.1)), /* Gradiente escuro */
-      url("../assets/img/home/foto-escritorio.svg"); /* Imagem de fundo */
+      url("../assets/img/home/foto-escritorio.png"); /* Imagem de fundo */
   background-size: cover; /* Cobrir toda a área */
   background-position: center; /* Centralizar a imagem */
   display: flex;
