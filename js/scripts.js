@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', event => {
         if (!navbarCollapsible) return;
         
         navbarCollapsible.classList.toggle('navbar-shrink', window.scrollY !== 0);
-    };
+    }; 
     //thiago aqui
 
     // Initialize
